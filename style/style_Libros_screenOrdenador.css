@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&display=swap');
+@import url(./style_Libros_screenMovil.css) only screen and (max-width:481px);
+@import url(./style_Libros_screenTablet.css) screen and (min-width:481px) and (max-width:769px);
+@import url(./) screen and (min-width:769px);
+
+*{
+    /* border:1px solid red; */
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (min-width:769px){
+    header{
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: rgb(49, 83, 99);
+    }
+
+    header>img:first-of-type{
+        width: 17%;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    #navbar{
+        list-style-type: none;
+        height: 40%;
+        width: 80%;
+        margin-top: 3%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        color:rgb(253, 245, 236);
+        font-weight: 900;
+    }
+
+    #navbar>li{
+        margin-right: 3%; 
+        width: auto;
+        height: auto;
+        font-size: 1.1rem;
+        border: 0.1vw solid rgb(49, 83, 99);
+        padding: 1vw;
+        border-radius: 20vw;
+    }
+
+    #navbar>li:nth-child(5), #navbar>li:nth-child(6){
+        border: 0.1vw outset silver;
+        background-color: #e4ebf3;
+        color:black;
+        box-shadow: 3px 5px 18px rgb(211, 210, 211);
+    }
+
+    #navbar>li:nth-child(7){
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #cesta{
+        width: 40%;
+        height: 85%;
+    }
+
+    #contenedor_buscador{
+        height: 20%;
+        padding: 3%;
+        background-color: rgb(49, 83, 99);
+        text-align: center;
+
+    }
+
+    #barra_buscador{
+        height: 140%;
+        border: 0.1vw solid rgb(49, 83, 99);
+        border-radius: 13vw;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    #boton{
+        width: 7%;
+        height: 152%;
+        border: 0.1vw solid rgb(187, 15, 55);
+        border-radius: 13vw;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 1.2rem;
+        background-color: rgb(187, 15, 55);
+        margin-left: -0.8%;
+    }
+
+    section{
+        /* height: 90%; */
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 0.7%;
+        margin-bottom: 1%;
+    }
+
+    hr{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+
+    section>ul{
+        list-style-type: none;
+        width: 96%;
+        height: 65vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: center;  
+        justify-content: space-around;     
+    }
+
+    section>ul>li{
+        width: 14%;
+        height: 100%;
+        font-size: 0.7rem;
+        line-height: 125%;
+    }
+    
+    section>ul>li>span{
+        display: block;
+        margin-bottom: 3%;
+    }
+    
+    .titulo{
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: rgb(187, 15, 55);
+    }
+
+    .autor{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+
+    section img{
+        display: block;
+        width: 100%;
+        /* height: 60%; */ 
+        margin-bottom: 4%;   
+    }
+
+    footer{
+        background-color: rgb(49, 83, 99);
+        height: 20vh;
+        padding: 1%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    footer>#img_footer{
+        width: 10%;
+        /* height: 27%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer>p{
+        width: 99%;
+        text-align: center;
+        font-family: Georgia, Cochin, Cambria, Times, 'Times New Roman', serif;
+        font-style: oblique;
+        color:rgb(253, 245, 236);
+        margin-top: 1%;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* https://www.w3schools.com/cssref/css3_pr_transform.asp
+https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=matrix(0.866,0.7,-0.8,0.866,0,0) */

@@ -1,0 +1,152 @@
+header{
+    width: 100vw;
+    height: 22vh;
+}
+
+header>ul{
+    list-style-type: none;
+    width: 100%;
+    height: 25%;
+}
+
+#navbar_socios{
+    /* display: none; */
+    width: 100%;
+    position: relative;
+    top: -57%;
+    padding: 2%;
+    background-color: rgba(240, 248, 255, 0.541);
+    /* visibility: hidden; */
+}
+
+#navbar_socios:hover{
+    visibility: visible;
+}
+
+#navbar::after{
+    content: "";
+    display: block;
+    height: 15px;
+    /* width: 15%; */
+    background-image: url('../images/flechas-grises.png');
+    background-size: 20em;
+    /* position:relative;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+#navbar_socios>li{
+    display: inline;
+    float: left;
+    margin-top: 2%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    border: 0.1vw solid rgb(255, 255, 255);
+    padding: 1vw;
+    border-radius: 20vw;
+}
+
+#navbar_socios>li:first-child{
+    margin-left: 10%;
+}
+
+#navbar_socios>li:first-child, #navbar_socios>li:nth-child(2){
+    border: 0.1vw outset silver;
+    background-color: #e4ebf3;
+    box-shadow: 3px 5px 18px rgb(211, 210, 211);
+}
+
+#cesta{
+    float:left;
+    width: 20%;
+    height: 20%;
+}
+
+header>img:first-of-type{
+    width: 50%;
+    /* height: 50%; */
+    max-width: 100%;
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#navbar{
+    clear:both;
+    list-style-type: none;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(49, 83, 99);
+}
+
+#navbar>li{
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 1.2%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:rgb(253, 245, 236);
+}
+
+section{
+    width: 80%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+section>div{
+    position: relative;
+    display: inline-block;
+}
+
+section>div>img{
+    width: 100%;
+    height: 30%;    
+}
+
+section>div>p{
+    width: auto;
+    height: auto;
+    /* max-height: 80%; */
+    line-height: 130%;
+    color: rgb(187, 15, 55);
+    font-size: 1rem;
+    font-family: 'Bebas Neue', 'My Soul', 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+footer{
+    background-color: rgb(49, 83, 99);
+    padding: 2%;
+}
+
+footer>#img_footer{
+    display: block;
+    width: 10%;
+    height: 10%;
+    /* background-color: rgb(49, 83, 99); */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer>p{
+    text-align: center;
+    font-family: Georgia, Cochin, Cambria, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 0.6rem;
+    color:rgb(253, 245, 236);
+    margin-top: 1%;
+}
