@@ -113,19 +113,21 @@ x
 /* --- SECTION --- */
 
 #contacto{
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 h1{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-top: 0.7%;
     margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
 }
 
@@ -138,10 +140,12 @@ hr{
 
     /* --- SECTION: FORMULARIO --- */
     #formulario{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2%;    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-around;
+        padding: 5% 3% 5%;    
     }
 
     #formulario>*{
@@ -162,7 +166,7 @@ hr{
     }
 
     .elementoFormulario:nth-child(2)>input{
-        width: 49.25%;
+        width: 100%;
     }
 
     .elementoFormulario>p{
@@ -175,18 +179,8 @@ hr{
         color:rgb(173, 1, 1);
     }
 
-    #elementoFormularioInline>p:first-of-type{grid-area: nombreYapellidos;}
-    #elementoFormularioInline>p:last-of-type{grid-area: email;}
-    #elementoFormularioInline>input:first-of-type{grid-area: inputNombre;}
-    #elementoFormularioInline>input:last-of-type{grid-area: inputEmail;}
-
-    #elementoFormularioInline{
-        display: grid;
-        grid-template-columns: 49.25% 49.25%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 'nombreYapellidos email'
-                            'inputNombre inputEmail';
-        column-gap:1.5%;
+    #elementoFormularioInline>input{
+        width: 100%;
     }
 
     textarea{
@@ -210,13 +204,11 @@ hr{
 
     /* --- SECTION: MAPA --- */
     #mapa{
-        /* width: 50%; */
-        margin-left: auto;
-        margin-right: auto;
-        padding: 3%;
+        padding: 5% 3% 5%;
     }
 
     iframe{
+        width:100%;
         padding-top: 2%;
     }
 
