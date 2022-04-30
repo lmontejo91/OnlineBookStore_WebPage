@@ -6,42 +6,191 @@
     <meta name="description" content="Ejercicio 8.5. Práctica Libre">
     <meta name="keywords" content="position, display, float, grid, flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style/style_WebNegocio.css" rel="stylesheet" type="text/css">
+    <link href="./style/style_masVendidos.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <div id="desplegable"></div>
-        <img src="./images/logo_libro.png" alt="Logo Página Web: Libro gigante con personas alrededor trabajando en él.">
-        <ul id="navbar_socios">
-            <li>Regístrate</li>
-            <li>Iniciar Sesión</li>
-            <li><img id="cesta" src="./images/cesta.png" alt="Cesta de la compra">Carrito</li>
-        </ul>
-    </header>
-    <nav>
-        <ul id="navbar">
-            <li>Más vendidos</li>
-            <li>Libros</li>
-            <li>Actividades</li>
-            <li>Contacto</li>
-        </ul>
-    </nav>
-    <section>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul> 
-    </section>
-    <footer>
-        <img id="img_footer" src="./images/logos_Redes.png" alt="Logos enlaces a los perfiles de +L en las distintas redes sociales">
-        <p>© 2022 by LucíaMontejoValladolid Creado con VisualStudioCode</p>
-    </footer>
+    <div id="contenedor">
+        <header>
+            <div id="desplegable"></div>
+            <img src="./images/logo_libro.png" alt="Logo Página Web: Libro gigante con personas alrededor trabajando en él.">
+            <ul id="navbar">
+                <li>Más vendidos</li>
+                <li>Libros</li>
+                <li>Actividades</li>
+                <li>Contacto</li>
+                <li>Regístrate</li>
+                <li>Iniciar Sesión</li>
+                <li><img id="cesta" src="./images/cesta.png" alt="Cesta de la compra">Carrito</li>
+            </ul>
+        </header>
+        <div id="contenedor_buscador">
+            <input type="text" name="buscador" id="barra_buscador" size="90" placeholder="  Título, autor, isbn..."/>
+            <input type="submit" value="Buscar" id="boton"/>
+        </div>
+        <section>
+            <h1>Los 100 más vendidos</h1>
+            <hr>
+            <div id="list_bestsellers">
+                <div class="bestsellers_book">
+                    <img src="./images/elisabetBenavent.jpg" alt="Portada El arte de engañar al karma">
+                    <div class="bestsellers_text">
+                        <span class="titulo">El arte de engañar al karma</span>
+                        <span class="autor">Benavent, Elísabet</span>
+                        Una aspirante a actriz cansada de hacer castings... Un artista reconocido en plena crisis creativa... Unos valiosos cuadros encontrados en un desván... Y el arte del engaño para cambiar las leyes del karma. Después de vender más de 3.000.000 de ejemplares de sus novelas, Elísabet Benavent vuelve...
+                        <span class="editorial">DEBOLSILLO / 978-84-663-5937-5</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">17.95€<span>18.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">9/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="./images/pilarEyre.jpg" alt="Portada Cuando éramos ayer">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Cuando éramos ayer</span>
+                        <span class="autor">Eyre, Pilar</span>
+                        Barcelona, 1968. Silvia Muntaner se presenta en sociedad en el Ritz, su familia tiene puestas todas las esperanzas en su espectacular belleza y en una buena boda para salvar su desastrosa economía doméstica. Pero sus sueños son muy distintos de los de su madre: esa noche conocerá el amor por primera...
+                        <span class="editorial">Editorial Planeta / 978-84-08-25473-7</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">19.85€<span>20.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">9/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="./images/pokemon.png" alt="Portada Pokemon">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Pokémon. Aventuras para colorear (Colección Pokémon)</span>
+                        <span class="autor">The Pokémon Company</span>
+                        ¡El libro oficial con el que podrás divertirte coloreando a tus Pokémon favoritos! Descubre el Poké-artista que llevas dentro con tus Pokémon favoritos. ¿Quieres pintar a Pikachu de verde? ¿Te gustan los colores de Charmander? ¡En este libro podrás colorear y decorar a tus Pokémons favoritos! Sol...
+                        <span class="editorial">MONTENA / 978-84-19169-30-3</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">5.65€<span>5.95€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella"> Sé el primero en dar tu opinión</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="./images/palomaSanchez.jpg" alt="Portada Últimos días en Berlín">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Últimos días en Berlín</span>
+                        <span class="autor">Sánchez-Garnica, Paloma</span>
+                        Cuando Yuri Santacruz asistió al nombramiento como canciller de Adolf Hitler, no podía imaginar lo mucho que cambiaría su vida en Berlín. Había llegado allí unos meses atrás, después de haber huido, junto con parte de su familia, de San Petersburgo, asfixiados por una revolución que los había dejado...
+                        <span class="editorial">Editorial Planeta / 978-84-08-24985-6</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">21.75€<span>22.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">10/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="./images/aliHazelwood.jpg" alt="Portada La hipótesis del amor">
+                    <div class="bestsellers_text">
+                        <span class="titulo">La hipótesis del amor</span>
+                        <span class="autor">Hazelwood, Ali</span>
+                        LA COMEDIA ROMÁNTICA MÁS ESPERADA DEL AÑO QUE HA CAUSADO SENSACIÓN EN TIKTOK. Una relación falsa entre dos científicos se topa con la irresistible fuerza de la atracción. Olive Smith es una doctoranda de tercer año que no cree en las relaciones amorosas duraderas, pero su mejor amiga, Ahn, sí, y...
+                        <span class="editorial">Contraluz Editorial / 978-84-18945-18-2</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">18€<span>18.95€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">9/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="./images/annaKadabra.jpg" alt="Portada Anna Kadabra 8">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Anna Kadabra 8. El festival de brujería</span>
+                        <span class="autor">Mañas, Pedro / Sierra Listón, David</span>
+                        Anna y el resto de aprendices están emocionados. ¡Les toca ser los anfitriones del próximo festival de brujería! Pasarán juntos un fin de semana en la mansión encantada, conocerán a un montón de magos… y competirán con los demás clubes para intentar ganar el premio más importante: ¡la gran varita de...
+                        <span class="editorial">Destino Infantil & Juvenil / 978-84-08-25135-4</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">9.45€<span>9.95€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">10/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/719yqLXOmyL.jpg" alt="Portada Roma soy yo">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Roma soy yo<br>La verdadera historia de Julio César</span>
+                        <span class="autor">Posteguillo, Santiago</span>
+                        DESPUÉS DE JULIO CÉSAR, EL MUNDO NUNCA VOLVIÓ A SER EL MISMO. Si alguna vez hubo un hombre nacido para cambiar el curso de la Historia, ese fue Julio César. Su leyenda, veinte siglos después, sigue más viva que nunca. Roma, año 77 a.C. El cruel senador Dolabela va a ser juzgado por corrupción, pe...
+                        <span class="editorial">B / 978-84-666-7178-1</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">22.70€<span>23.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">8/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81PFtvKlQTL.jpg" alt="Portada El Libro Negro de las Horas">
+                    <div class="bestsellers_text">
+                        <span class="titulo">El Libro Negro de las Horas</span>
+                        <span class="autor">García Sáenz de Urturi, Eva</span>
+                        El esperado regreso de Eva García Sáenz de Urturi. El thriller que más de 2.000.000 de personas están deseando leer. Alguien que lleva muerto cuarenta años no puede ser secuestrado y, desde luego, no puede sangrar. Vitoria, 2022. El exinspector Unai López de Ayala —alias Kraken— recibe una llam...
+                        <span class="editorial">Editorial Planeta / 978-84-08-25285-6</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">19.85€<span>20.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">9/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/716GaLQav8S.jpg" alt="Portada Violeta">
+                    <div class="bestsellers_text">
+                        <span class="titulo">Violeta</span>
+                        <span class="autor">Allende, Isabel</span>
+                        La épica y emocionante historia de una mujer cuya vida abarca los momentos históricos más relevantes del siglo XX. Desde 1920 -con la llamada «gripe española»- hasta la pandemia de 2020, la vida de Violeta será mucho más que la historia de un siglo. Violeta viene al mundo un tormentoso día de 192...
+                        <span class="editorial">PLAZA & JANES / 978-84-01-02747-5</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">21.75€<span>22.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">9/10</div>
+                    </div>
+                </div>
+                <div class="bestsellers_book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71PfWK0ZkuL.jpg" alt="Portada El mapa de los anhelos">
+                    <div class="bestsellers_text">
+                        <span class="titulo">El mapa de los anhelos</span>
+                        <span class="autor">Kellen, Alice</span>
+                        ¿Y si te diesen un mapa para descubrir quién eres? ¿Seguirías la ruta marcada hasta el final? Imagina que estás destinada a salvar a tu hermana, pero al final ella muere y la razón de tu existencia se desvanece. Eso es lo que le ocurre a Grace Peterson, la chica que siempre se ha sentido invisible...
+                        <span class="editorial">Editorial Planeta / 978-84-08-25595-6</span>
+                    </div>
+                    <div class="bestsellers_details">
+                        <div class="precioDescuento">17€<span>17.90€</span></div>
+                        <div class="descuento">-5% de descuento</div>
+                        <div class="estrellas"><img src="./images/estrella.png" alt="Icono estrella">10/10</div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>&lsaquo;</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>&rsaquo;</li>
+            </ul> 
+        </section>
+        <footer>
+            <img id="img_footer" src="./images/logos_Redes.png" alt="Logos enlaces a los perfiles de +L en las distintas redes sociales">
+            <p>© 2022 by LucíaMontejoValladolid Creado con VisualStudioCode</p>
+        </footer>
+    </div>
 </body>
 </html>

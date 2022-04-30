@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&display=swap');
+@import url(./style_MasVendidos/style_masVendidos_screenMovil.css) only screen and (max-width:481px);
+@import url(./style_MasVendidos/style_masVendidos_screenTablet.css) screen and (min-width:481px) and (max-width:769px);
+@import url(./style_MasVendidos/style_masVendidos_screenOrdenador.css) screen and (min-width:769px);
+
+*{
+    /* border:1px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* https://www.w3schools.com/cssref/css3_pr_transform.asp
+https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=matrix(0.866,0.7,-0.8,0.866,0,0) */

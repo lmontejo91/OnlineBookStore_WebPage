@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucía Montejo">
+    <meta name="description" content="Ejercicio 8.5. Práctica Libre">
+    <meta name="keywords" content="position, display, float, grid, flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style_Contacto.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <header>
+            <img src="./images/logo_libro.png" alt="Logo Página Web: Libro gigante con personas alrededor trabajando en él.">
+            <div id="desplegable">
+                <span id="navbarIcon"></span>
+                <ul id="navbar">
+                    <li>Más vendidos</li>
+                    <li>Libros</li>
+                    <li>Actividades</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <ul id="navbar_socios">
+                <li>Regístrate</li>
+                <li>Iniciar Sesión</li>
+                <li><img id="cesta" src="./images/cesta.png" alt="Cesta de la compra"> Carrito</li>
+            </ul>
+        </header>
+        <section>
+            <div id="contacto">
+                <div id="formulario">
+                    <h1>Contacta con nosotros</h1>
+                    <hr>
+                    <p>Si quieres contactar con nosotros o echas en falta algo en nuestro catálogo, rellena el siguiente formulario: ​</p>
+                    <form name="formularioContacto" method="POST" action="http://www.institutos.es/para.php">
+                        <div class="elementoFormulario" id="elementoFormularioInline">
+                            <p>Nombre y Apellidos</p>
+                            <input type="Text" name="Nombre" size="10" maxlength="10"/>
+                            <p>Email <span id="asterisco">*</span></p>
+                            <input type="email" name="correo" size="40" required="required" pattern="[\w]+@[\w]+\.[a-z]{2,}$"/>
+                        </div>
+                        <div class="elementoFormulario">
+                            <p>Teléfono de contacto</p>
+                            <input type="tel" name="teléfono" minlength="9" maxlength="12" pattern="(\+34)?[0-9]{9}"/>
+                        </div>
+                        <div class="elementoFormulario">
+                            <p>Mensaje <span id="asterisco">*</span></p>
+                            <textarea name="comentario" rows="8" cols="70" required="required"> Introduce tu consulta...</textarea> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="diez" required="required"/> He leído y acepto la política de privacidad <span id="asterisco">*</span>
+                        </div>
+                        <div class="botonForm">
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                        <div class="botonForm">
+                            <input type="reset" value="Reestablecer"/>
+                        </div> 
+                    </form>
+                </div>
+                <div id="mapa">
+                    <h1>Dónde encontrarnos</h1>
+                    <hr>
+                    <p>C. del Carmen, 2, 28013 Madrid</p>
+                    <p>Tlfn: +34 918 368 000</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.6244244014215!2d-3.704890985892671!3d40.4166125085815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e1ab296e9%3A0x7ef552ef7dd48819!2sC.%20del%20Carmen%2C%202%2C%2028013%20Madrid!5e0!3m2!1ses!2ses!4v1651320691884!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <img id="img_footer" src="./images/logos_Redes.png" alt="Logos enlaces a los perfiles de +L en las distintas redes sociales">
+            <p>© 2022 by LucíaMontejoValladolid Creado con VisualStudioCode</p>
+        </footer>
+</body>
+</html>
