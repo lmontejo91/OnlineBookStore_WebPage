@@ -72,6 +72,15 @@ header>img:first-of-type{
     margin-left: 8%;
 }
 
+#navbar>li>a{
+    color:rgb(253, 245, 236);
+    text-decoration: none;
+}
+
+#navbar>li>a:hover{
+    color: blue;
+    font-weight: bold;
+}
 
 /* --- SECTION --- */
 
@@ -88,6 +97,16 @@ h1{
     text-align: center;
     font-size: 2rem;
     font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+}
+
+h1>a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+}
+
+h1>a:hover{
+    color:blue;
 }
 
 hr{
@@ -185,8 +204,8 @@ hr{
         margin-top: 2%;
         margin-left: 1%;
         padding: 0.8%;
-        padding-left: 3%;
-        width: 22%;
+        padding-left: 2%;
+        width: 23%;
         border: 0.1vw outset rgb(49, 83, 99);
         border-radius: 20vw;
         background-color: rgb(49, 83, 99);
