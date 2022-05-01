@@ -1,70 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&display=swap');
 
-*{
-    /* border:1px solid red; */
-}
+    
+    /* --- HEADER --- */
+    
+    header{
+        width: 100%;
+        /* display: flex;
+        flex-flow: ; */
+        background-color: rgb(49, 83, 99);
+    }
 
-#contenedor{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-}
+    header>a{
+        display: block;
+        width: 26%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
 
-header{
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    flex-flow: row wrap;
-    background-color: rgb(49, 83, 99);
-}
+    header>a>img{
+        width: 100%;
+    }
 
-header>img:first-of-type{
-    width: 20%;
-    /* height: 100%; */
-    margin-left: auto;
-    margin-right: auto;
-}
+        /* --- HEADER: NAVBAR --- */
+        #desplegable{
+            display: inline;
+            width: 68%;
+        }
 
-#navbar{
-    list-style-type: none;
-    height: 20%;
-    width: 100%;
-    /* margin-top: 3%; */
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    color:rgb(253, 245, 236);
-    font-weight: 900;
-}
+        #navbar{
+            list-style-type: none;
+            width: 100%;
+            margin-top: 2%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            color:rgb(253, 245, 236);
+            font-weight: 900;
+        }
 
-#navbar>li{
-    /* margin-right: 5%; */ 
-    width: auto;
-    height: auto;
-    font-size: 0.8rem;
-    border: 0.1vw solid rgb(49, 83, 99);
-    padding: 0.2vw;
-    border-radius: 20vw;
-}
+        #navbar>li{
+            height: 50%;
+            font-size: 1.1rem;
+            border: 0.1vw solid rgb(49, 83, 99);
+            padding: 0.6vw;
+            border-radius: 20vw;
+        }
 
-#navbar>li:nth-child(5), #navbar>li:nth-child(6){
-    border: 0.1vw outset silver;
-    background-color: #e4ebf3;
-    color:black;
-    box-shadow: 3px 5px 18px rgb(211, 210, 211);
-}
+        #navbar>li>a{
+            color:rgb(253, 245, 236);
+            text-decoration: none;
+        }
+        
+        #navbar>li>a:hover{
+            font-weight: bold;
+        }
 
-#navbar>li:nth-child(7){
-    display: flex;
-    flex-flow: row nowrap;
-}
+        /* --- HEADER: NAVBAR_SOCIOS --- */
 
-#cesta{
-    width: 40%;
-    height: 85%;
-}
+        #navbar_socios{
+            position: absolute;
+            top:1%;
+            right: 0%;
+            list-style-type: none;
+            width: 45%;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            color:rgb(253, 245, 236);
+            font-weight: 900;
+        }
 
+        #navbar_socios>li{
+            height: 50%;
+            font-size: 0.7rem;
+            padding: 0.5vw;
+            border-radius: 20vw;
+            border: 0.1vw outset silver;
+            background-color: #e4ebf3;
+            color:black;
+        }
+
+        #navbar_socios>li:last-child{
+            display: flex;
+            flex-flow: row nowrap;
+            color:rgb(253, 245, 236);
+            border: 0.1vw solid rgb(49, 83, 99);
+            background-color: rgb(49, 83, 99);
+        }
+
+        #cesta{
+            width: 30%;
+            height: 75%;
+        }
+
+/* --- BUSCADOR --- */
 #contenedor_buscador{
     /* display: block; */
     /* height: 20%; */
@@ -93,8 +122,10 @@ header>img:first-of-type{
     background-color: rgb(187, 15, 55);
 }
 
+/* --- SECTION --- */
+
 section{
-    /* height: 90%; */
+    width: 100%;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -102,7 +133,7 @@ section{
 
 h1{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 0.7%;
     margin-bottom: 1%;
 }
@@ -114,50 +145,118 @@ hr{
     margin-bottom: 3%;
 }
 
-section>ul{
+#list_bestsellers{
     list-style-type: none;
-    width: 95%;
-    height: 45vh;
+    width: 88%;
+    /* height: 65vh; */
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-self: center;  
-    justify-content: space-around;
-    display: inline-block;     
+    justify-content: space-around;     
 }
 
-section>ul>li{
-    width: 14%;
-    /* height: 100%; */
+.bestsellers_book{
+    width: 96%;
+    height: 250px;
     font-size: 0.5rem;
-    line-height: 125%;
+    font-family: 'Amazon Ember Cd RC Light', Arial,Helvetica,sans-serif;
+    /* line-height: 125%; */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'bestsellersImg bestsellersText';
+    gap: 2vw;
+    padding: 2%;
+    padding-bottom: 3%;
+    border-bottom: 0.06rem solid #d0d6dd;
+    overflow: hidden;
 }
 
-section>ul>li>span{
+.bestsellers_book>img{
+    grid-area: bestsellersImg;
+    width: 100%;
+    /* height: 60%; */ 
+    /* margin-bottom: 4%;   */ 
+}
+
+.bestsellers_text{
+    grid-area: bestsellersText;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 130%;
+    text-align: justify;
+    padding: 1%;
+    overflow: hidden;
+}
+
+span{
     display: block;
-    margin-bottom: 3%;
+    line-height: 160%;
 }
 
 .titulo{
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     color: rgb(187, 15, 55);
+    font-weight: bold;
 }
 
 .autor{
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: 1.3rem;
 }
 
-section img{
-    display: block;
-    width: 100%;
-    /* height: 50%; */ 
-    margin-bottom: 4%;   
+.editorial{
+    color: #757779;
+    padding-top: 3%;
+    font-size: 1rem;
 }
 
+.bestsellers_details{
+    display: none;
+}
+
+
+
+/* --- PAGINATION --- */
+
+section ul{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 4%;
+    list-style: none;
+    text-align: center;
+    color: #333;
+}
+
+section li{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-top: 0.06rem outset #dee2e6;
+    border-bottom: 0.06rem outset #dee2e6;
+    border-left: 0.06rem outset #dee2e6;
+    padding: 0.8%;
+}
+
+section li:last-child{
+    border-right: 0.06rem outset #dee2e6;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+section li:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+section li:nth-child(2){
+    background-color: #333;
+    color:rgb(253, 245, 236);
+}
+
+
+/* --- FOOTER --- */
 footer{
     background-color: rgb(49, 83, 99);
-    height: 20vh;
+    /* height: 20vh; */
     padding: 1%;
     display: flex;
     flex-flow: column wrap;
@@ -178,10 +277,5 @@ footer>p{
     font-style: oblique;
     color:rgb(253, 245, 236);
     margin-top: 1%;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
-
-
-
-/* https://www.w3schools.com/cssref/css3_pr_transform.asp
-https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=matrix(0.866,0.7,-0.8,0.866,0,0) */

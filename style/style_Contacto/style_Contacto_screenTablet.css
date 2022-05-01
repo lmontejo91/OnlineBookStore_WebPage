@@ -1,55 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=My+Soul&display=swap');
-@import url(./style_Libros_screenMovil.css) only screen and (max-width:481px);
-@import url(./style_Libros_screenTablet.css) screen and (min-width:481px) and (max-width:769px);
-@import url(./) screen and (min-width:769px);
 
-@font-face {
-    font-family: 'Amazon Ember Display Medium';
-    src: url(../AmazonEmber_Font/Amazon\ Ember\ Display\ Medium\ Italic.ttf);
-}
-
-@font-face {
-    font-family: 'Amazon Ember Cd RC Light';
-    src: url(../AmazonEmber_Font/Amazon\ Ember\ Cd\ RC\ Light.ttf);
-}
-
-@font-face {
-    font-family: 'Amazon Ember Display Light';
-    src: url(../AmazonEmber_Font/Amazon\ Ember\ Display\ Light.ttf);
-}
-
-*{
-    /* border:1px solid red; */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 1em;
-    font-family: 'Amazon Ember Display Light', Arial,Helvetica,sans-serif;
-}
-
-@media only screen and (min-width:769px){
     
     /* --- HEADER --- */
     
     header{
         width: 100%;
-        display: flex;
-        flex-flow: row wrap;
+        /* display: flex;
+        flex-flow: ; */
         background-color: rgb(49, 83, 99);
     }
 
-    header>img:first-of-type{
-        width: 17%;
-        max-width: 100%;
+    header>a{
+        display: block;
+        width: 26%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
+
+    header>a>img{
+        width: 100%;
     }
 
         /* --- HEADER: NAVBAR --- */
+        #desplegable{
+            display: inline;
+            width: 68%;
+        }
 
         #navbar{
             list-style-type: none;
-            width: 68%;
-            margin-top: 3%;
-            margin-left: 9%;
+            width: 100%;
+            margin-top: 2%;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-around;
@@ -58,28 +39,59 @@
         }
 
         #navbar>li{
-            height: 60%;
+            height: 50%;
             font-size: 1.1rem;
             border: 0.1vw solid rgb(49, 83, 99);
             padding: 0.6vw;
             border-radius: 20vw;
         }
 
-        #navbar>li:nth-child(5), #navbar>li:nth-child(6){
+        #navbar>li>a{
+            color:rgb(253, 245, 236);
+            text-decoration: none;
+        }
+        
+        #navbar>li>a:hover{
+            font-weight: bold;
+        }
+
+        /* --- HEADER: NAVBAR_SOCIOS --- */
+
+        #navbar_socios{
+            position: absolute;
+            top:1%;
+            right: 0%;
+            /* transform: translate(130%, -540%); */
+            list-style-type: none;
+            width: 45%;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            color:rgb(253, 245, 236);
+            font-weight: 900;
+        }
+
+        #navbar_socios>li{
+            height: 50%;
+            font-size: 0.7rem;
+            padding: 0.5vw;
+            border-radius: 20vw;
             border: 0.1vw outset silver;
             background-color: #e4ebf3;
             color:black;
-            box-shadow: 3px 5px 18px rgb(211, 210, 211);
         }
 
-        #navbar>li:nth-child(7){
+        #navbar_socios>li:last-child{
             display: flex;
             flex-flow: row nowrap;
+            color:rgb(253, 245, 236);
+            border: 0.1vw solid rgb(49, 83, 99);
+            background-color: rgb(49, 83, 99);
         }
 
         #cesta{
-            width: 40%;
-            height: 85%;
+            width: 30%;
+            height: 75%;
         }
 
     /* --- SECTION --- */
@@ -89,7 +101,7 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: column;
         justify-content: space-around;
     }
 
@@ -111,10 +123,10 @@
         /* --- SECTION: FORMULARIO --- */
 
         #formulario{
-            width: 50%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
-            padding: 2%;    
+            padding: 5% 3% 5%;    
         }
 
         #formulario>*{
@@ -184,10 +196,9 @@
         /* --- SECTION: MAPA --- */
 
         #mapa{
-            /* width: 50%; */
             margin-left: auto;
             margin-right: auto;
-            padding: 3%;
+            padding: 5% 3% 7%;
         }
 
         iframe{
@@ -218,8 +229,3 @@
         margin-top: 1%;
         font-size: 0.8rem;
     }
-}
-
-
-/* https://www.w3schools.com/cssref/css3_pr_transform.asp
-https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=matrix(0.866,0.7,-0.8,0.866,0,0) */

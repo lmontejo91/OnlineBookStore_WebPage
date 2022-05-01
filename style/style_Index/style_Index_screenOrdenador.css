@@ -78,7 +78,6 @@ header>img:first-of-type{
 }
 
 #navbar>li>a:hover{
-    color: blue;
     font-weight: bold;
 }
 

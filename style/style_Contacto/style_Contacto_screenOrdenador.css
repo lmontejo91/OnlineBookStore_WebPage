@@ -9,9 +9,12 @@
         background-color: rgb(49, 83, 99);
     }
 
-    header>img:first-of-type{
+    header>a{
         width: 17%;
-        max-width: 100%;
+    }
+
+    header>a>img{
+        width: 100%;
     }
 
         /* --- HEADER: NAVBAR --- */
@@ -38,6 +41,16 @@
             border-radius: 20vw;
         }
 
+        #navbar>li>a{
+            color:rgb(253, 245, 236);
+            text-decoration: none;
+        }
+        
+        #navbar>li>a:hover{
+            font-weight: bolder;
+        }
+
+        /* --- HEADER: NAVBAR_SOCIOS --- */
         #navbar_socios{
             list-style-type: none;
             width: 45%;
@@ -79,7 +92,7 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-around;
     }
 

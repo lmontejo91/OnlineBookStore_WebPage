@@ -4,56 +4,85 @@
 header{
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     background-color: rgb(49, 83, 99);
 }
 
-header>img:first-of-type{
+header>a{
     width: 17%;
-    max-width: 100%;
 }
 
-/* --- HEADER: NAVBAR --- */
-
-#navbar{
-    list-style-type: none;
-    /* height: 40%; */
-    width: 68%;
-    margin-top: 3%;
-    margin-left: 9%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    color:rgb(253, 245, 236);
-    font-weight: 900;
+header>a>img{
+    width: 100%;
 }
 
-#navbar>li{
-    /* margin-right: 3%; */ 
-    /* width: 14.28%; */
-    height: 60%;
-    font-size: 1.1rem;
-    border: 0.1vw solid rgb(49, 83, 99);
-    padding: 0.6vw;
-    border-radius: 20vw;
-}
+    /* --- HEADER: NAVBAR --- */
+    #desplegable{
+        width: 68%;
+    }
 
-#navbar>li:nth-child(5), #navbar>li:nth-child(6){
-    border: 0.1vw outset silver;
-    background-color: #e4ebf3;
-    color:black;
-    box-shadow: 3px 5px 18px rgb(211, 210, 211);
-}
+    #navbar{
+        list-style-type: none;
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        color:rgb(253, 245, 236);
+        font-weight: 900;
+    }
 
-#navbar>li:nth-child(7){
-    display: flex;
-    flex-flow: row nowrap;
-}
+    #navbar>li{
+        height: 50%;
+        font-size: 1.1rem;
+        border: 0.1vw solid rgb(49, 83, 99);
+        padding: 0.6vw;
+        border-radius: 20vw;
+    }
 
-#cesta{
-    width: 40%;
-    height: 85%;
-}
+    #navbar>li>a{
+        color:rgb(253, 245, 236);
+        text-decoration: none;
+    }
+    
+    #navbar>li>a:hover{
+        font-weight: bold;
+    }
+
+    /* --- HEADER: NAVBAR_SOCIOS --- */
+    #navbar_socios{
+        list-style-type: none;
+        width: 45%;
+        margin-top: 2.6%;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        color:rgb(253, 245, 236);
+        font-weight: 900;
+    }
+
+    #navbar_socios>li{
+        height: 50%;
+        font-size: 1.1rem;
+        padding: 0.5vw;
+        border-radius: 20vw;
+        border: 0.1vw outset silver;
+        background-color: #e4ebf3;
+        color:black;
+    }
+
+    #navbar_socios>li:last-child{
+        display: flex;
+        flex-flow: row nowrap;
+        color:rgb(253, 245, 236);
+        border: 0.1vw solid rgb(49, 83, 99);
+        background-color: rgb(49, 83, 99);
+    }
+
+    #cesta{
+        width: 40%;
+        height: 85%;
+    }
 
 /* --- BUSCADOR --- */
 
@@ -91,7 +120,7 @@ header>img:first-of-type{
 /* --- SECTION --- */
 
 section{
-    /* height: 90%; */
+    width: 100%;
     padding: 3%;
     display: flex;
     flex-direction: column;

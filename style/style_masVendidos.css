@@ -3,12 +3,28 @@
 @import url(./style_MasVendidos/style_masVendidos_screenTablet.css) screen and (min-width:481px) and (max-width:769px);
 @import url(./style_MasVendidos/style_masVendidos_screenOrdenador.css) screen and (min-width:769px);
 
+@font-face {
+    font-family: 'Amazon Ember Display Medium';
+    src: url(../AmazonEmber_Font/Amazon\ Ember\ Display\ Medium\ Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Amazon Ember Cd RC Light';
+    src: url(../AmazonEmber_Font/Amazon\ Ember\ Cd\ RC\ Light.ttf);
+}
+
+@font-face {
+    font-family: 'Amazon Ember Display Light';
+    src: url(../AmazonEmber_Font/Amazon\ Ember\ Display\ Light.ttf);
+}
+
 *{
     /* border:1px solid red; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 1em;
+    font-family: 'Amazon Ember Display Light', Arial,Helvetica,sans-serif;
 }
 
 #contenedor{

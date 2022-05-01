@@ -10,12 +10,15 @@ header{
     background-color: rgb(49, 83, 99);
 }
 
-header>img:first-of-type{
-    grid-area: imagenLogo;
+header>a{
     width: 80%;
-    max-width: 100%;
+    grid-area: imagenLogo;
     margin-top: -12%;
     margin-left: -8%;
+}
+
+header>a>img{
+    width: 100%;
 }
 
     /* --- HEADER: NAVBAR --- */
@@ -52,9 +55,6 @@ x
 
     #navbar{
         list-style-type: none;
-        /* width: 68%;
-        margin-top: 3%;
-        margin-left: 9%;*/
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -71,6 +71,16 @@ x
         padding: 0.6vw;
     }
 
+    #navbar>li>a{
+        color:rgb(253, 245, 236);
+        text-decoration: none;
+    }
+    
+    #navbar>li>a:hover{
+        font-weight: bold;
+    }
+
+    /* --- HEADER: NAVBAR_SOCIOS --- */
     #navbar_socios{
         grid-area: navSocios;
         list-style-type: none;
