@@ -1,143 +1,390 @@
+
+/* --- HEADER --- */ /* (Float) */
+
 header{
     width: 100vw;
-    height: 22vh;
-}
-
-header>ul{
-    list-style-type: none;
-    width: 100%;
-    height: 25%;
-}
-
-#navbar_socios{
-    /* display: none; */
-    width: 100%;
-    position: relative;
-    top: -57%;
-    padding: 2%;
-    background-color: rgba(240, 248, 255, 0.541);
-    /* visibility: hidden; */
-}
-
-#navbar_socios:hover{
-    visibility: visible;
-}
-
-#navbar::after{
-    content: "";
-    display: block;
-    height: 15px;
-    /* width: 15%; */
-    background-image: url('../images/flechas-grises.png');
-    background-size: 20em;
-    /* position:relative;
-    top:0%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
-}
-
-#navbar_socios>li{
-    display: inline;
-    float: left;
-    margin-top: 2%;
-    margin-right: 5%;
-    width: auto;
-    height: auto;
-    font-size: 1rem;
-    border: 0.1vw solid rgb(255, 255, 255);
-    padding: 1vw;
-    border-radius: 20vw;
-}
-
-#navbar_socios>li:first-child{
-    margin-left: 10%;
-}
-
-#navbar_socios>li:first-child, #navbar_socios>li:nth-child(2){
-    border: 0.1vw outset silver;
-    background-color: #e4ebf3;
-    box-shadow: 3px 5px 18px rgb(211, 210, 211);
-}
-
-#cesta{
-    float:left;
-    width: 20%;
-    height: 20%;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 header>img:first-of-type{
-    width: 50%;
-    /* height: 50%; */
+    display: block;
+    width: 28%;
     max-width: 100%;
-    position: relative;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
 }
 
-#navbar{
-    clear:both;
-    list-style-type: none;
-    margin-top: 1%;
-    width: 100%;
-    height: auto;
-    padding: 2%;
-    text-align: center;
-    background-color: rgb(49, 83, 99);
-}
+    /* --- NAVBAR SOCIOS --- */ /* (Float) */
 
-#navbar>li{
-    display: inline-block;
-    margin-right: 5%;
-    margin-top: 1.2%;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color:rgb(253, 245, 236);
-}
+    #navbar_socios{
+        display: flex;
+        flex-flow: row nowrap;
+        list-style-type: none;
+        width: 100%;
+        margin: 3% 0 3%;
+        justify-content: flex-end;
+    }
+
+    #navbar_socios>li{
+        display: inline-block;
+        margin-left: 2.7%;
+        width: auto;
+        height: auto;
+        font-size: 1.12rem;
+        border: 0.1vw solid rgb(255, 255, 255);
+        padding: 1vw;
+        border-radius: 20vw;
+    }
+
+    #navbar_socios>li:first-child, #navbar_socios>li:nth-child(2){
+        border: 0.1vw outset silver;
+        background-color: #e4ebf3;
+        box-shadow: 3px 5px 18px rgb(211, 210, 211);
+    }
+
+
+    #cesta{
+        width: 25%;
+    }
+
+
+    /* --- NAVBAR --- */
+
+    #navbar{
+        list-style-type: none;
+        margin-top: 2%;
+        width: 100%;
+        padding: 2.5% 0 0;
+        text-align: center;
+        background-color: rgb(49, 83, 99);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    #navbar>li{
+        font-size: 1.5rem;
+        color:rgb(253, 245, 236);
+    }
+
+    #navbar>li>a{
+        color:rgb(253, 245, 236);
+        text-decoration: none;
+    }
+
+    #navbar>li>a:hover{
+        font-weight: bold;
+    }
+
+/* --- SECTION --- */
 
 section{
-    width: 80%;
-    height: 30%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    padding: 2% 0 2%;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+}
+
+h1>a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+}
+
+h1>a:hover{
+    color:blue;
+}
+
+hr{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 3%;
 }
 
-section>div{
-    position: relative;
-    display: inline-block;
-}
+    /* --- CARRUSEL --- */  /* (Position) */
+    
+    #carrusel{
+        width: 100%;
+        margin: 4% auto;
+        overflow: hidden;
+    }
 
-section>div>img{
-    width: 100%;
-    height: 30%;    
-}
+    #carrusel-caja{ 
+        animation: automatizacion 15s infinite linear;
+        transition: all 0.75s ease;
+        height: 230px;
+        width: 300%;
+    }
 
-section>div>p{
-    width: auto;
-    height: auto;
-    /* max-height: 80%; */
-    line-height: 130%;
-    color: rgb(187, 15, 55);
-    font-size: 1rem;
-    font-family: 'Bebas Neue', 'My Soul', 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    position: absolute;
-    top: 3%;
-    left: 3%;
-}
+    #carrusel img{
+        /* position: relative; */
+        width: 100%;
+        height: 230px;   
+    }
+
+    .carrusel-elemento {
+        float: left;
+        width: 33.333%;
+        position: relative;
+    }
+
+    .carrusel-elemento>p{
+        width: auto;
+        height: auto;
+        line-height: 160%;
+        color: rgb(187, 15, 55);
+        font-size: 1.4rem;
+        font-family: 'Bebas Neue', 'My Soul', 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+    }
+
+    .carrusel-elemento>p>span{
+        font-size: 1rem;
+        padding:2%;
+        border: 0.1vw outset rgb(49, 83, 99, 0.809);
+        border-radius: 20vw;
+        background-color: rgba(49, 83, 99, 0.809);
+        color: rgb(253, 245, 236);
+        font-weight: 700;
+    }
+
+    .carrusel-elemento:last-child>p{
+        width: 100%;
+        height: 15%;
+        color: rgb(253, 245, 236);
+        text-align: center;
+        background-color: rgba(49, 83, 99, 0.809);
+        top: 42%;
+        left: 0;
+    }
+
+    @keyframes automatizacion{ /*@keyframes permite establecer unos rangos en la secuencia de la animación para el desplazamiento de las imágenes*/
+        0% {
+            margin-left: 0;
+        }
+    
+        30% {
+            margin-left: 0;
+        }
+    
+        35% {
+            margin-left: -100%;
+        }
+    
+        65% {
+            margin-left: -100%;
+        }
+    
+        70% {
+            margin-left: -200%;
+        }
+    
+        95% {
+            margin-left: -200%;
+        }
+    
+        100% {
+            margin-left: 0;
+        }
+    }
+
+    /* --- LIBROS --- */ /* (Flex) */
+
+    #libros{
+        width: 96%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;       
+    }
+
+    #libros_promo{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: center;  
+        justify-content: space-around;     
+    }
+
+    .promo{
+        width: 30%;
+        height: 100%;
+        font-size: 0.8rem;
+        line-height: 125%;
+        font-family: 'Amazon Ember Cd RC Light',Arial,Helvetica,sans-serif;
+    }
+    
+    .promo>span{
+        display: block;
+        margin-bottom: 3%;
+    }
+
+    .promo>.titulo{
+        font-size: 0.9rem;
+        font-weight: bold;
+        font-family: 'Amazon Ember Display Medium',Arial,Helvetica,sans-serif;
+    }
+
+    .verMas{
+        font-style: oblique;
+        font-weight: 800;
+        color: rgb(73, 132, 160);
+    }
+
+    .promo>img{
+        width: 100%;
+    }
+
+    #libros>div:last-of-type{
+        margin: 3% 2% 0;
+        padding: 0.8%;
+        padding-left: 2%;
+        width: 32%;
+        border: 0.1vw outset rgb(49, 83, 99);
+        border-radius: 20vw;
+        background-color: rgb(49, 83, 99);
+        color: rgb(253, 245, 236);
+        font-weight: 700;
+        font-size: 1.8vw;
+    }
+
+    /* --- BESTSELLERS --- */
+
+    #bestsellers{
+        width: 96%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;       
+    }
+
+    #list_bestsellers{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-self: center;  
+        justify-content: center;     
+    }
+
+    .bestsellers_book{
+        width: 130px;
+        font-size: 0.7rem;
+        font-family: 'Amazon Ember Cd RC Light', Arial,Helvetica,sans-serif;
+        line-height: 125%;
+        padding: 2% 1.2% 1%;
+    }
+    
+    .bestsellers_book>span{
+        display: block;
+        padding-bottom: 3%;
+    }
+    
+    .bestsellers_book>.titulo{
+        font-size: 0.9rem;
+        font-weight: bold;
+        font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+        color: rgb(187, 15, 55);
+    }
+
+    .bestsellers_book>.autor{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+
+    .bestsellers_book>img{
+        display: block;
+        width: 100%;           
+        padding-bottom: 5%;   
+    }
+
+    /* --- ACTIVIDADES --- */ /* (Flex y Grid) */
+    
+    #actividades{
+        width: 96%;
+        padding: 3% 0 3%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-around;       
+    }
+
+    #lista_actividades{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;  
+        justify-content: space-around; 
+    }
+
+    .actividad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0% 4%;
+    }
+
+    .actividad>img{
+        width: 100%;
+        border-image: round;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2%;
+    }
+
+    .textoActividad{
+        line-height: 170%;
+        text-align: justify;
+    }
+
+    .textoActividad>span:first-of-type{
+        display: block;
+        font-size: 1.3rem;
+        font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
+        line-height: normal;
+        margin-bottom: 2%;
+    }
+
+    .textoActividad>span:last-of-type{
+        display: block;
+        font-style: oblique;
+        font-weight: 800;
+        color: rgb(73, 132, 160);
+    }
+
+    /* --- FLECHAS VOLVER A INICIO --- */
+    section>a:last-child{
+        display: block;
+        width: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section>a:last-child>img{
+        width: 100%;
+    }
+
+/* --- FOOTER --- */
 
 footer{
     background-color: rgb(49, 83, 99);
-    padding: 2%;
+    padding: 1%;
 }
 
 footer>#img_footer{
     display: block;
     width: 10%;
-    height: 10%;
-    /* background-color: rgb(49, 83, 99); */
     margin-left: auto;
     margin-right: auto;
 }
@@ -146,7 +393,7 @@ footer>p{
     text-align: center;
     font-family: Georgia, Cochin, Cambria, Times, 'Times New Roman', serif;
     font-style: oblique;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color:rgb(253, 245, 236);
     margin-top: 1%;
 }
