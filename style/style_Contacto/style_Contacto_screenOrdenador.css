@@ -34,7 +34,6 @@
         }
 
         #navbar>li{
-            height: 50%;
             font-size: 1.1rem;
             border: 0.1vw solid rgb(49, 83, 99);
             padding: 0.6vw;
@@ -54,7 +53,7 @@
         #navbar_socios{
             list-style-type: none;
             width: 45%;
-            margin-top: 2.6%;
+            margin-top: 2.9%;
             display: inline-flex;
             flex-flow: row nowrap;
             justify-content: space-around;
@@ -64,7 +63,7 @@
 
         #navbar_socios>li{
             height: 50%;
-            font-size: 1.1rem;
+            font-size: 1rem;
             padding: 0.5vw;
             border-radius: 20vw;
             border: 0.1vw outset silver;
@@ -221,8 +220,3 @@
         margin-top: 1%;
         font-size: 0.8rem;
     }
-
-
-
-/* https://www.w3schools.com/cssref/css3_pr_transform.asp
-https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=matrix(0.866,0.7,-0.8,0.866,0,0) */

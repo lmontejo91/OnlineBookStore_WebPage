@@ -9,7 +9,7 @@ header{
 
 header>img:first-of-type{
     display: block;
-    width: 28%;
+    width: 33%;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -22,7 +22,7 @@ header>img:first-of-type{
         list-style-type: none;
         width: 100%;
         margin: 3% 0 3%;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     #navbar_socios>li{
@@ -30,7 +30,7 @@ header>img:first-of-type{
         margin-left: 2.7%;
         width: auto;
         height: auto;
-        font-size: 1.12rem;
+        font-size: 0.8rem;
         border: 0.1vw solid rgb(255, 255, 255);
         padding: 1vw;
         border-radius: 20vw;
@@ -42,39 +42,39 @@ header>img:first-of-type{
         box-shadow: 3px 5px 18px rgb(211, 210, 211);
     }
 
-
     #cesta{
-        width: 25%;
+        width: 18%;
     }
 
 
-    /* --- NAVBAR --- */
+/* --- NAVBAR --- */
 
-    #navbar{
-        list-style-type: none;
-        margin-top: 2%;
-        width: 100%;
-        padding: 2.5% 0 0;
-        text-align: center;
-        background-color: rgb(49, 83, 99);
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
+#navbar{
+    list-style-type: none;
+    margin-top: 2%;
+    width: 100%;
+    padding: 2.5% 0 0;
+    text-align: center;
+    background-color: rgb(49, 83, 99);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
 
-    #navbar>li{
-        font-size: 1.5rem;
-        color:rgb(253, 245, 236);
-    }
+#navbar>li{
+    font-size: 1.1rem;
+    color:rgb(253, 245, 236);
+}
 
-    #navbar>li>a{
-        color:rgb(253, 245, 236);
-        text-decoration: none;
-    }
+#navbar>li>a{
+    color:rgb(253, 245, 236);
+    text-decoration: none;
+}
 
-    #navbar>li>a:hover{
-        font-weight: bold;
-    }
+#navbar>li>a:hover{
+    font-weight: bold;
+}
+
 
 /* --- SECTION --- */
 
@@ -87,7 +87,7 @@ section{
 
 h1{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Amazon Ember Display Medium', Arial,Helvetica,sans-serif;
 }
 
@@ -103,9 +103,7 @@ h1>a:hover{
 
 hr{
     width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
+    margin: 0 auto 4%;
 }
 
     /* --- CARRUSEL --- */  /* (Position) */
@@ -119,14 +117,13 @@ hr{
     #carrusel-caja{ 
         animation: automatizacion 15s infinite linear;
         transition: all 0.75s ease;
-        height: 230px;
+        height: 220px;
         width: 300%;
     }
 
     #carrusel img{
-        /* position: relative; */
         width: 100%;
-        height: 230px;   
+        height: 220px;   
     }
 
     .carrusel-elemento {
@@ -140,7 +137,7 @@ hr{
         height: auto;
         line-height: 160%;
         color: rgb(187, 15, 55);
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         font-family: 'Bebas Neue', 'My Soul', 'Times New Roman', Times, serif;
         font-weight: bolder;
         position: absolute;
@@ -149,7 +146,7 @@ hr{
     }
 
     .carrusel-elemento>p>span{
-        font-size: 1rem;
+        font-size: 0.7rem;
         padding:2%;
         border: 0.1vw outset rgb(49, 83, 99, 0.809);
         border-radius: 20vw;
@@ -212,17 +209,18 @@ hr{
     #libros_promo{
         width: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-direction: column;
         align-self: center;  
         justify-content: space-around;     
     }
 
     .promo{
-        width: 30%;
-        height: 100%;
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 1rem;
         line-height: 125%;
+        text-align: justify;
         font-family: 'Amazon Ember Cd RC Light',Arial,Helvetica,sans-serif;
+        padding: 2.5% 0 1%;
     }
     
     .promo>span{
@@ -247,16 +245,16 @@ hr{
     }
 
     #libros>div:last-of-type{
-        margin: 3% 2% 0;
-        padding: 0.8%;
-        padding-left: 2%;
-        width: 32%;
+        margin: 0 auto 3%;
+        padding: 2%;
+        width: 34%;
         border: 0.1vw outset rgb(49, 83, 99);
         border-radius: 20vw;
         background-color: rgb(49, 83, 99);
         color: rgb(253, 245, 236);
         font-weight: 700;
         font-size: 1.8vw;
+        text-align: center;
     }
 
     /* --- BESTSELLERS --- */
@@ -275,12 +273,13 @@ hr{
         display: flex;
         flex-flow: row wrap;
         align-self: center;  
-        justify-content: center;     
+        justify-content: space-around;     
     }
 
     .bestsellers_book{
         width: 130px;
         font-size: 0.7rem;
+        text-align: justify;
         font-family: 'Amazon Ember Cd RC Light', Arial,Helvetica,sans-serif;
         line-height: 125%;
         padding: 2% 1.2% 1%;
@@ -364,9 +363,10 @@ hr{
     }
 
     /* --- FLECHAS VOLVER A INICIO --- */
+
     section>a:last-child{
         display: block;
-        width: 4%;
+        width: 3%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -375,6 +375,7 @@ hr{
         width: 100%;
     }
 
+    
 /* --- FOOTER --- */
 
 footer{

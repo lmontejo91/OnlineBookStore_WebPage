@@ -4,8 +4,6 @@
     
     header{
         width: 100%;
-        /* display: flex;
-        flex-flow: ; */
         background-color: rgb(49, 83, 99);
     }
 
@@ -14,7 +12,7 @@
         width: 26%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 5%;
+        padding-top: 6%;
     }
 
     header>a>img{
@@ -61,7 +59,6 @@
             position: absolute;
             top:1%;
             right: 0%;
-            /* transform: translate(130%, -540%); */
             list-style-type: none;
             width: 45%;
             display: inline-flex;
@@ -73,7 +70,7 @@
 
         #navbar_socios>li{
             height: 50%;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             padding: 0.5vw;
             border-radius: 20vw;
             border: 0.1vw outset silver;
@@ -91,7 +88,6 @@
 
         #cesta{
             width: 30%;
-            height: 75%;
         }
 
     /* --- SECTION --- */
