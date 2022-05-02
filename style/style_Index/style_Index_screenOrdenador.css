@@ -11,75 +11,75 @@ header>img:first-of-type{
     max-width: 100%;
 }
 
-/* --- NAVBAR SOCIOS --- */ /* (Float) */
+    /* --- NAVBAR SOCIOS --- */ /* (Float) */
 
-#navbar_socios{
-    float: right;
-    list-style-type: none;
-    height: 50%;
-    width: 43%;
-    margin-top: 3%;
-}
+    #navbar_socios{
+        float: right;
+        list-style-type: none;
+        height: 50%;
+        width: 43%;
+        margin-top: 3%;
+    }
 
-#navbar_socios>li{
-    display: inline-block;
-    float: left;
-    margin-right: 5%;
-    width: auto;
-    height: auto;
-    font-size: 1.125rem;
-    border: 0.1vw solid rgb(255, 255, 255);
-    padding: 1vw;
-    border-radius: 20vw;
-}
+    #navbar_socios>li{
+        display: inline-block;
+        float: left;
+        margin-right: 5%;
+        width: auto;
+        height: auto;
+        font-size: 1.125rem;
+        border: 0.1vw solid rgb(255, 255, 255);
+        padding: 1vw;
+        border-radius: 20vw;
+    }
 
-#navbar_socios>li:first-child, #navbar_socios>li:nth-child(2){
-    border: 0.1vw outset silver;
-    background-color: #e4ebf3;
-    box-shadow: 3px 5px 18px rgb(211, 210, 211);
-}
-
-
-#cesta{
-    float:left;
-    width: 30%;
-    height: 30%;
-}
+    #navbar_socios>li:first-child, #navbar_socios>li:nth-child(2){
+        border: 0.1vw outset silver;
+        background-color: #e4ebf3;
+        box-shadow: 3px 5px 18px rgb(211, 210, 211);
+    }
 
 
-/* --- NAVBAR --- */
+    #cesta{
+        float:left;
+        width: 30%;
+        height: 30%;
+    }
 
-#navbar{
-    clear:both;
-    list-style-type: none;
-    margin-top: 2%;
-    width: 100%;
-    /* height: 10vh; */
-    /* padding: 2vw; */
-    text-align: center;
-    background-color: rgb(49, 83, 99);
-}
 
-#navbar>li{
-    display: inline-block;
-    margin-right: 8%;
-    margin-top: 1.2%;
-    font-size: 1.5rem;
-    color:rgb(253, 245, 236);
-}
+    /* --- NAVBAR --- */
 
-#navbar>li:first-child{
-    margin-left: 8%;
-}
+    #navbar{
+        clear:both;
+        list-style-type: none;
+        margin-top: 2%;
+        width: 100%;
+        /* height: 10vh; */
+        /* padding: 2vw; */
+        text-align: center;
+        background-color: rgb(49, 83, 99);
+    }
 
-#navbar>li>a{
-    color:rgb(253, 245, 236);
-    text-decoration: none;
-}
+    #navbar>li{
+        display: inline-block;
+        margin-right: 8%;
+        margin-top: 1.2%;
+        font-size: 1.5rem;
+        color:rgb(253, 245, 236);
+    }
 
-#navbar>li>a:hover{
-    font-weight: bold;
-}
+    #navbar>li:first-child{
+        margin-left: 8%;
+    }
+
+    #navbar>li>a{
+        color:rgb(253, 245, 236);
+        text-decoration: none;
+    }
+
+    #navbar>li>a:hover{
+        font-weight: bold;
+    }
 
 /* --- SECTION --- */
 
@@ -118,29 +118,34 @@ hr{
     /* --- CARRUSEL --- */  /* (Position) */
     
     #carrusel{
-        /* position: relative; */
-        /* display: inline-block; */
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        margin: 4% auto;
+        overflow: hidden;
+        text-align: left;
     }
 
-    #carrusel>div{
+    #carrusel-caja{ 
+        animation: automatizacion 15s infinite linear;
+        transition: all 0.75s ease;
+        height: 300px;
+        width: 300%;
+    }
+
+    #carrusel img{
+        /* position: relative; */
+        width: 100%;
+        height: 300px;   
+    }
+
+    .carrusel-elemento {
+        float: left;
+        width: 33.333%;
         position: relative;
-        width: 100%;    
     }
 
-    #carrusel>div>img{
-        position: relative;
-        width: 100%;    
-    }
-
-    #carrusel>div>p{
+    .carrusel-elemento>p{
         width: auto;
         height: auto;
-        /* max-height: 80%; */
         line-height: 160%;
         color: rgb(187, 15, 55);
         font-size: 2.45rem;
@@ -149,6 +154,56 @@ hr{
         position: absolute;
         top: 3%;
         left: 3%;
+    }
+
+    .carrusel-elemento>p>span{
+        font-size: 1.3rem;
+        padding:2%;
+        border: 0.1vw outset rgb(49, 83, 99, 0.809);
+        border-radius: 20vw;
+        background-color: rgba(49, 83, 99, 0.809);
+        color: rgb(253, 245, 236);
+        font-weight: 700;
+    }
+
+    .carrusel-elemento:last-child>p{
+        width: 100%;
+        height: 15%;
+        color: rgb(253, 245, 236);
+        text-align: center;
+        background-color: rgba(49, 83, 99, 0.809);
+        top: 42%;
+        left: 0;
+    }
+
+    @keyframes automatizacion{ /*@keyframes permite establecer unos rangos en la secuencia de la animación para el desplazamiento de las imágenes*/
+        0% {
+            margin-left: 0;
+        }
+    
+        30% {
+            margin-left: 0;
+        }
+    
+        35% {
+            margin-left: -100%;
+        }
+    
+        65% {
+            margin-left: -100%;
+        }
+    
+        70% {
+            margin-left: -200%;
+        }
+    
+        95% {
+            margin-left: -200%;
+        }
+    
+        100% {
+            margin-left: 0;
+        }
     }
 
     /* --- LIBROS --- */ /* (Flex) */
@@ -341,6 +396,17 @@ hr{
         margin-bottom: 4%;   
     }
 
+    /* --- FLECHAS VOLVER A INICIO --- */
+    section>a:last-child{
+        display: block;
+        width: 4%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section>a:last-child>img{
+        width: 100%;
+    }
 
 /* --- FOOTER --- */
 

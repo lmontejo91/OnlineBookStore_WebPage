@@ -9,7 +9,7 @@
     <link href="./style/style_Index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
+    <header id="Inicio">
         <div id="desplegable"></div>
         <img src="./images/logo_libro.png" alt="Logo Página Web: Libro gigante con personas alrededor trabajando en él.">
         <ul id="navbar_socios">
@@ -28,9 +28,19 @@
     </nav>
     <section>
         <div id="carrusel">
-            <div>
-            <img src="./images/home_web_mes_del_libro.jpg" alt="">
-            <p>Feliz mes del Libro<br>5% de dto. y envío gratis*<br>Exclusivo Socios</p>
+            <div id="carrusel-caja">
+                <div class="carrusel-elemento">
+                    <img src="./images/carrusel_01.jpg" alt="">
+                    <p>Feliz mes del Libro<br>5% de dto. y envío gratis*<br>Exclusivo Socios</p>
+                </div>
+                <div class="carrusel-elemento">
+                    <img src="./images/carrusel_02.jpg" alt="">
+                    <p>Celebra el día de la madre regalando historias<br><span>Consulta nuestra selección</span></p>
+                </div>
+                <div class="carrusel-elemento">
+                    <img src="./images/carrusel_03.jpg" alt="">
+                    <p>Celebra el Día del Libro en la Cuesta de Moyano</p>
+                </div>
             </div>
         </div>
         <div id="libros">
@@ -132,6 +142,9 @@
                 </div>
             </div>
         </div>
+        <a href="#Inicio">
+            <img src="./images/flechas-grises.png" alt="Flechas dobles grises para volver al principio de página">
+        </a>
     </section>
     <footer>
         <img id="img_footer" src="./images/logos_Redes.png" alt="Logos enlaces a los perfiles de +L en las distintas redes sociales">

@@ -42,12 +42,12 @@ x
         content: url(../../images/navbarIcon.png);
     }
 
-    #navbarIcon:after {
+    /* #navbarIcon:after {
         content: "MENÚ ";
         color: rgb(253, 245, 236);
         font-size: 0.7rem;
         font-weight: 600;
-    }
+    } */
 
     #desplegable:hover #navbar{
         display: block;
