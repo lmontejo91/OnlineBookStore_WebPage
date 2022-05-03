@@ -247,13 +247,13 @@ hr{
     #libros>div:last-of-type{
         margin: 0 auto 3%;
         padding: 2%;
-        width: 34%;
+        width: 44%;
         border: 0.1vw outset rgb(49, 83, 99);
         border-radius: 20vw;
         background-color: rgb(49, 83, 99);
         color: rgb(253, 245, 236);
         font-weight: 700;
-        font-size: 1.8vw;
+        font-size: 0.5rem;
         text-align: center;
     }
 
@@ -366,7 +366,7 @@ hr{
 
     section>a:last-child{
         display: block;
-        width: 3%;
+        width: 4%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -385,9 +385,10 @@ footer{
 
 footer>#img_footer{
     display: block;
-    width: 10%;
+    width: 15%;
     margin-left: auto;
     margin-right: auto;
+    padding: 2% 0 1%;
 }
 
 footer>p{
